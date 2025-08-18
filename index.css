@@ -6,6 +6,7 @@ body{
 header{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 nav{
     display: flex;
@@ -20,11 +21,13 @@ nav a{
     padding: 0.5rem 1rem;
 }
 nav a:hover{
-    background-color: darkcyan;
+    background-color: #08fdf6;
+    color: black;
 }
 main{
     margin-top: 12rem;
     text-align: center;
+    width: 100%;
 }
 main h1, p{
     text-transform: uppercase;
@@ -36,6 +39,7 @@ main h1{
 }
 main p{
     font-size:1.3rem;
+    color: #08fdf6;
 }
 main .social_links{
     margin-top: 2rem;
