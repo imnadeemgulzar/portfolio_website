@@ -11,7 +11,7 @@ body {
 }
 .wrapper {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .about_page_content {
   display: flex;
@@ -26,6 +26,7 @@ header {
   justify-content: center;
   width: 100%;
   position: fixed;
+  background: #000;
 }
 .main_nav {
   border-bottom: 2px solid #04d1fa;
@@ -62,22 +63,23 @@ main {
   text-align: center;
   width: 60%;
   padding: 1em;
-  /* background-color: lightsalmon; */
 }
-.about_page_sidebar{
+.about_page_sidebar {
   width: 30%;
   padding: 3em;
-  border-radius: 4em 0 0 0;
-  background-color: #042133;
+  border-radius: 0 0 4em 0;
+  background: linear-gradient(to left top, #2d3c3f, #000);
+  box-shadow: 1px 2px #07eff9e6;
+  transform: skew(-10deg)
 }
 .about_page_sidebar h2 {
   text-transform: uppercase;
   font-size: 1.5em;
-  margin-bottom: .7em;
+  margin-bottom: 0.7em;
 }
 .about_page_sidebar li {
-  font-size: 1em;
-  margin-bottom: .5em;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
 }
 main h1,
 main p {
@@ -93,15 +95,12 @@ main p {
   font-size: 1.3rem;
   margin: 0 25%;
 }
-.about_page_heading{
+.about_page_heading {
   margin: 3rem 0;
-
 }
-/* .about_page_wrapper{
-  background-color: black;
-} */
+
 .about_page p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2em;
   word-spacing: 5px;
 }
 .about_page_heading {
@@ -163,19 +162,37 @@ main .social_links a {
     justify-content: space-between;
   }
   .about_page {
-  width: 95%;
+    width: 95%;
+  }
+  .about_page_heading {
+    font-size: 2em;
+  }
+  .about_page p {
+    font-size: 1rem;
+  }
+  .about_page_content {
+    flex-direction: column;
+  }
+  .about_page_sidebar {
+    width: 90%;
+    margin: 1em;
+    padding: 1.5em;
+  }
+   .about_page_sidebar li{
+  font-size: .8em
 }
-.about_page_heading{
-  font-size: 2em;
 }
-.about_page p{
-  font-size: 1rem;
+@media (min-width: 600px) and (max-width: 900px) {
+  .about_page_content{
+    justify-content:space-evenly;
+  }
+  .about_page_sidebar h2 {
+  font-size: 1em;
 }
-.about_page_content{
-  flex-direction: column;
+.about_page p {
+  font-size: 1em;
 }
-.about_page_sidebar{
-  width: 90%;
-  margin: 1em;
+ .about_page_sidebar li{
+  font-size: .9em;
 }
 }
