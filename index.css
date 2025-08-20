@@ -17,8 +17,8 @@ body {
   display: flex;
   margin: 1em;
   align-items: center;
-  justify-content: space-between;
-  gap: 2em;
+  /* justify-content: space-between; */
+  gap: 6em;
   /* width: 100vw; */
 }
 header {
@@ -61,7 +61,7 @@ main {
 }
 .about_page {
   text-align: center;
-  width: 60%;
+  max-width:50%;
   padding: 1em;
 }
 .about_page_sidebar {
@@ -162,7 +162,7 @@ main .social_links a {
     justify-content: space-between;
   }
   .about_page {
-    width: 95%;
+    max-width: 100%;
   }
   .about_page_heading {
     font-size: 2em;
@@ -172,6 +172,7 @@ main .social_links a {
   }
   .about_page_content {
     flex-direction: column;
+    gap:2em;
   }
   .about_page_sidebar {
     width: 90%;
@@ -184,7 +185,7 @@ main .social_links a {
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .about_page_content{
-    justify-content:space-evenly;
+    gap: 3em;
   }
   .about_page_sidebar h2 {
   font-size: 1em;
